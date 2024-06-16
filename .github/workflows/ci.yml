@@ -25,11 +25,11 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t hello-world .
+        docker build -t hello-world-nodejs .
 
     - name: Run Docker container
       run: |
-        docker run hello-world
+        docker run hello-world-nodejs
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
