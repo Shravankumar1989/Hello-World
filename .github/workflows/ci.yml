@@ -23,6 +23,14 @@ jobs:
         echo "console.log('Hello World');" > test.js
         node test.js
 
+    - name: Build Docker image
+      run: |
+        docker build -t hello-world .
+
+    - name: Run Docker container
+      run: |
+        docker run hello-world
+
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
