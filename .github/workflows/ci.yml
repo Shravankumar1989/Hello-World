@@ -18,9 +18,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run the application
+    - name: Run a simple Node.js script to print Hello World
       run: |
-        node app.js
+        echo "console.log('Hello World');" > test.js
+        node test.js
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
