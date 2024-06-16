@@ -18,10 +18,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run a simple Node.js script to print Hello World
+    - name: Run a simple Node.js script to print Hello World Node-Js Project!
       run: |
-        echo "console.log('Hello World');" > test.js
-        node test.js
+        node app.js
 
     - name: Build Docker image
       run: |
