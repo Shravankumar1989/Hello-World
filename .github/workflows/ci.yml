@@ -26,6 +26,11 @@ jobs:
       run: |
         docker build -t hello-world-nodejs .
 
+    - name: Scan Docker image for vulnerabilities
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: hello-world-nodejs
+
     - name: Run Docker container
       run: |
         docker run hello-world-nodejs
