@@ -1,5 +1,5 @@
 {
-  "name": "hello-world-nodejs",
+  "name": "Hello-World",
   "version": "1.0.0",
   "description": "A simple Hello World Node.js project",
   "main": "app.js",
@@ -9,6 +9,6 @@
   "dependencies": {
     "express": "^4.17.1"
   },
-  "author": "SHravankumar Patil",
+  "author": "Shravankumar Patil",
   "license": "ISC"
 }
