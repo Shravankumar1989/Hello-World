@@ -14,3 +14,9 @@ app.get('/', (req, res) => {
   // Print 'Hello World!' to the console
   console.log('Hello World Node-Js Project!');
 });
+
+// Start the server and listen on the specified port
+app.listen(port, () => {
+  // Print a message to the console indicating that the server is running and listening on the specified port
+  console.log(`Example app listening at http://localhost:${port}`);
+});
